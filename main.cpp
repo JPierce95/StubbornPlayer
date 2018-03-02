@@ -42,6 +42,9 @@ int main()
      wins++; 
      cout << "Congratulations, the prize was behind door C" << endl;
     }
+    else{
+     cout << "The Prize was not behind door C. You loose." << endl; 
+    }
     
     cout << endl;
     cout << endl; //This is here so that there is a visible barrier between the two games.
