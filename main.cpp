@@ -15,23 +15,23 @@ int main()
   
   for(int i = 0; i < timesToPlay; i++){
     game.newGame();
-    cout << "Which door would you liek to choose? (A/B/C)";
+    cout << "Which door would you like to choose? (A/B/C) ";
     do{
       cin >> input;
       if(!(input == 'a' || input == 'b' || input == 'c' || input == 'A' || input == 'B' || input == 'C')){
-       cout << "You didn't enter a valid response. Please choose from (A/B/C)"; 
+       cout << "You didn't enter a valid response. Please choose from (A/B/C) "; 
       }
     }
     while(!(input == 'a' || input == 'b' || input == 'c' || input == 'A' || input == 'B' || input == 'C'));
     game.guessDoorC();
     cout << "The prize is not behind door C" << endl;
     
-    cout << "Which door would you like to choose next? (A/B/C)" <<endl;
+    cout << "Which door would you like to choose next? (A/B/C) ";
     
     do{
       cin >> input;
       if(!(input == 'a' || input == 'b' || input == 'c' || input == 'A' || input == 'B' || input == 'C')){
-       cout << "You didn't enter a valid response. Please choose from (A/B/C)"; 
+       cout << "You didn't enter a valid response. Please choose from (A/B/C) "; 
       }
     }
     while(!(input == 'a' || input == 'b' || input == 'c' || input == 'A' || input == 'B' || input == 'C'));
@@ -40,6 +40,7 @@ int main()
     
     if(game.isWinner()){
      wins++; 
+     cout << "Congratulations, the prize was behind door C" << endl;
     }
     
     cout << endl;
